@@ -1,12 +1,12 @@
-nginx Cookbook
+# nginx Cookbook
 ==============
 TODO: Enter the cookbook description here.
 
-# cd ~/chef-repo
-#knife cookbook create cookbook_name
-#knife cookbook create nginx
-#cd recipes
-# vi default.rb
+cd ~/chef-repo
+knife cookbook create cookbook_name
+knife cookbook create nginx
+cd recipes
+vi default.rb
 
 Start to write your recipe
 
