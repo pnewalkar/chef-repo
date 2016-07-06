@@ -1,7 +1,3 @@
-# chef-repo
-This repo for chef structure 
-
-<<<<<<< HEAD
 ## Prerequisites for chef setup
 
 ##server should have at least 4 cores and 4 GB of RAM.
