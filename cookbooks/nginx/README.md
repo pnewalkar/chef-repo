@@ -1,12 +1,17 @@
-nginx Cookbook
+# Nginx Cookbook
 ==============
 TODO: Enter the cookbook description here.
 
-# cd ~/chef-repo
-#knife cookbook create cookbook_name
-#knife cookbook create nginx
-#cd recipes
-# vi default.rb
+cd ~/chef-repo
+
+knife cookbook create cookbook_name
+
+knife cookbook create nginx
+
+cd recipes
+
+vi default.rb
+
 
 Start to write your recipe
 
@@ -40,8 +45,11 @@ service 'nginx' do
 end
 
 cookbook_file "/usr/share/nginx/www/index.html" do
+
   source "index.html"
+  
   mode "0644"
+  
 end
 
 
