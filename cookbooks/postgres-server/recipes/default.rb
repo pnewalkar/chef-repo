@@ -33,7 +33,7 @@ privileges [:all]
 action :grant
 end
 
-service service_name do
+service "postgresql" do
   supports :status => true, :restart => true, :reload => true
   action [ :enable, :start ] if node['postgres']['start_service']
   not_if { system("ps -ef | grep '[p]ostgres -D'") || system("svcs -a | grep postgres | grep online")   }
