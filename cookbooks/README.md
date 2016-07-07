@@ -1,4 +1,4 @@
-This directory contains the cookbooks used to configure systems in your infrastructure with Chef.
+#This directory contains the cookbooks used to configure systems in your infrastructure with Chef.
 
 Knife needs to be configured to know where the cookbooks are located with the `cookbook_path` setting. If this is not set, then several cookbook operations will fail to work properly.
 
@@ -47,8 +47,8 @@ This will:
 
 The last step will ensure that any local changes or modifications you have made to the cookbook are preserved, so you can keep your changes through upstream updates.
 
-If you're not using Git, use the site download subcommand to download the tarball.
+#If you're not using Git, use the site download subcommand to download the tarball.
 
     knife cookbook site download COOKBOOK
 
-This creates the COOKBOOK.tar.gz from in the current directory (e.g., `~/chef-repo`). We recommend following a workflow similar to the above for your version control tool.
+#This creates the COOKBOOK.tar.gz from in the current directory (e.g., `~/chef-repo`). We recommend following a workflow similar to the above for your version control tool.
