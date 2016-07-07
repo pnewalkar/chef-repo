@@ -15,20 +15,20 @@ conn_info = {
 :password => node['postgresql']['password']['postgres']
 }
  
-postgresql_database_user "example_user" do
+postgresql_database_user "postgres" do
 connection conn_info
-password "example_password"
+password "hksdh34rJT"
 action :create
 end
  
-postgresql_database "example_db" do
+postgresql_database "postgresql" do
 connection conn_info
 action :create
 end
  
-postgresql_database_user "example_user" do
+postgresql_database_user "postgres" do
 connection conn_info
-database_name "example_db"
+database_name "postgresql"
 privileges [:all]
 action :grant
 end
